@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RecursiveBinarySearchTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-12-21T21:09:18" hostname="Charless-iMac.local" time="0.052">
-  <properties/>
-  <testcase name="recursiveBinarySearch_givenEmptyArray_returnsFalse()" classname="RecursiveBinarySearchTest" time="0.04"/>
-  <testcase name="recursiveBinarySearch_givenArrayWithOutOfBoundsTarget_returnsFalse()" classname="RecursiveBinarySearchTest" time="0.003"/>
-  <testcase name="recursiveBinarySearch_givenArrayWithInBoundTarget_returnsTrue()" classname="RecursiveBinarySearchTest" time="0.003"/>
-  <system-out><![CDATA[Target: 1 not found!Target: 11 not found!Target: 10 not found!]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

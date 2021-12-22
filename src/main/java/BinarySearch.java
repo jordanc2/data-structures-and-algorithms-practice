@@ -3,7 +3,7 @@ public class BinarySearch {
 
     public BinarySearch() {}
 
-    public int binarySearch(int [] array, int target) {
+    public int binarySearch(int[] array, int target) {
 
         int firstIndex = 0;
         int lastIndex = array.length - 1;

@@ -4,7 +4,7 @@ public class RecursiveBinarySearch {
 
     public RecursiveBinarySearch() {}
 
-    public boolean recursiveBinarySearch(int [] array, int target) {
+    public boolean recursiveBinarySearch(int[] array, int target) {
         if (array == null || target > array.length) {
             System.out.printf("Target: %s not found!", target);
             return false;

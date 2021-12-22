@@ -3,9 +3,9 @@ public class LinearSearch {
 
     public LinearSearch() {}
 
-    public int linearSearch(int [] array, int target) {
+    public int linearSearch(int[] array, int target) {
 
-        for (int i = 0; i < array.length - 1; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == target) {
                 System.out.printf("Target: %s found at index: %s%n", target, i);
                 return i;

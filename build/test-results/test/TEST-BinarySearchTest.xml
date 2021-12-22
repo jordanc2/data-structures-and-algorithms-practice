@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BinarySearchTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-12-22T23:28:45" hostname="Charless-iMac.local" time="0.032">
+  <properties/>
+  <testcase name="binarySearch_arrayWithInBoundTarget_returnsIndexOfTarget()" classname="BinarySearchTest" time="0.03"/>
+  <testcase name="binarySearch_arrayWithOutOfBoundTarget_returnsZero()" classname="BinarySearchTest" time="0.001"/>
+  <system-out><![CDATA[Target: 10 found at index: 9
+Target value: 11, not found!]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
