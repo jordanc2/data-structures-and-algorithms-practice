@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="easy.RomanNumeralsToIntegerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-04-20T02:10:53" hostname="Charless-iMac.local" time="0.034">
-  <properties/>
-  <testcase name="romanToInt_romanNumeralsMCMXCIV_returnsInt1994()" classname="easy.RomanNumeralsToIntegerTest" time="0.026"/>
-  <testcase name="romanToInt_romanNumeralsIII_returnsInt3()" classname="easy.RomanNumeralsToIntegerTest" time="0.001"/>
-  <testcase name="romanToInt_romanNumeralsLVIII_returnsInt58()" classname="easy.RomanNumeralsToIntegerTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
