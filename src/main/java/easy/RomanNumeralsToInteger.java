@@ -25,7 +25,15 @@ public class RomanNumeralsToInteger {
         int n = string.length();
 
         for (int i = 0; i < n; i++) {
-            if (i != n -1 && roman.get(string.charAt(i)) < roman.get(string.charAt(i + 1))) {
+            // If current index is not the last element && the key of the current index is less than
+            //      the key of the next index.
+            //      -- Subtract the value of the next element from the value of the current element
+            //              then add that to the result variable. Continue the iteration.
+            //
+            // Else, add the value of the current element to the result variable.
+            //
+            // Return the result.
+            if (i != n - 1 && roman.get(string.charAt(i)) < roman.get(string.charAt(i + 1))) {
                 result += roman.get(string.charAt(i + 1)) - roman.get(string.charAt(i));
                 i++;
             } else {
