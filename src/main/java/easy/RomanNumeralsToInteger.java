@@ -25,9 +25,9 @@ public class RomanNumeralsToInteger {
         int n = string.length();
 
         for (int i = 0; i < n; i++) {
-            // If current index is not the last element && the key of the current index is less than
-            //      the key of the next index.
-            //      -- Subtract the value of the next element from the value of the current element
+            // If current index is not the last element && the value of the current index is less than
+            //      the value of the next index.
+            //      -- Subtract the value of the current element from the value of the next element
             //              then add that to the result variable. Continue the iteration.
             //
             // Else, add the value of the current element to the result variable.
