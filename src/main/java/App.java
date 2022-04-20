@@ -27,7 +27,6 @@ public class App {
         recursiveSearch1.recursiveBinarySearch(array, 99);
         RecursiveBinarySearch recursiveBinary2 = new RecursiveBinarySearch();
         recursiveBinary2.recursiveBinarySearch(array, 102);
-
     }
 
     public static void addToArray() {
