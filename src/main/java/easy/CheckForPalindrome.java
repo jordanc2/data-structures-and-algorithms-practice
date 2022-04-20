@@ -19,4 +19,17 @@ public class CheckForPalindrome {
         }
         return true;
     }
+
+    public boolean isAPalindrome_Recursive(String string) {
+        int start = 0;
+        int end = string.length() - 1;
+
+        while (start < end) {
+            if (string.charAt(start) != string.charAt(end)) {
+                return false;
+            }
+            return isAPalindrome_Recursive(string.substring(start + 1, end));
+        }
+        return true;
+    }
 }

@@ -46,4 +46,17 @@ class CheckForPalindromeTest {
         //  THEN
         assertFalse(result, "When given a non palindrome string, a false result is expected.");
     }
+
+    @Test
+    void isAPalindrome_Recursive_palindromeString_returnsTrue() {
+        // GIVEN
+        test = "kayak";
+
+        // WHEN
+        CheckForPalindrome palindrome = new CheckForPalindrome();
+        boolean result = palindrome.isAPalindrome_Recursive(test);
+
+        // THEN
+        assertTrue(result, "When provided a palindrome, a true result is expected");
+    }
 }
