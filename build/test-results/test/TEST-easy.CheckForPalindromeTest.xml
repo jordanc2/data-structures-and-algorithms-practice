@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="easy.CheckForPalindromeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-20T02:51:34" hostname="Charless-iMac.local" time="0.022">
-  <properties/>
-  <testcase name="isAPalindrome_Recursive_palindromeString_returnsTrue()" classname="easy.CheckForPalindromeTest" time="0.022"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
