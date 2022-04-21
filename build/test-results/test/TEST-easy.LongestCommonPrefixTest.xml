@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="easy.LongestCommonPrefixTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-04-21T21:44:42" hostname="Charless-iMac.local" time="0.03">
-  <properties/>
-  <testcase name="findLongestCommonPrefix_whenGivenAnArrayOfStrings_returnsTheLongestCommonPrefixOfTheArray()" classname="easy.LongestCommonPrefixTest" time="0.021"/>
-  <testcase name="findLongestCommonPrefix_whenGivenAnArrayOfStrings_returnsAnEmptyStringIfNoLongestCommonPrefixIsFound()" classname="easy.LongestCommonPrefixTest" time="0.001"/>
-  <testcase name="findLongestCommonPrefix_whenGivenAnEmptyArray_returnsAnEmptyString()" classname="easy.LongestCommonPrefixTest" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
