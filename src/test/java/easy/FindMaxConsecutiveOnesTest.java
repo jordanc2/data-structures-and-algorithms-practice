@@ -11,7 +11,7 @@ class FindMaxConsecutiveOnesTest {
     @Test
     void findTheMaxConsecutiveOnes_givenABinaryArray_returnsTheMaxConsecutiveOnesAsAnInteger() {
         // GIVEN
-        testArray = new int[]{1,1,0,1,1,1};
+        testArray = new int[]{1,1,0,1,1,1,0,1};
 
         // WHEN
         FindMaxConsecutiveOnes findMaxConsecutiveOnes = new FindMaxConsecutiveOnes();
