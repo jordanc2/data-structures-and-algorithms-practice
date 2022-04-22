@@ -27,18 +27,27 @@ public class MyQueue<T> {
     }
 
     /**
-     * Push an element from
-     * @param value
+     * Push an element onto the top of the Inbox stack
+     * @param value object to be added to the back of the queue
      */
     public void enqueue(T value) {
         inbox.push(value);
     }
 
+    /**
+     * Looks at the first element of the Outbox stack, without removing it
+     * @return the first object in the queue, without removing the object
+     */
     public T peek() {
         shiftStacks();
         return outbox.peek();
     }
 
+    /**
+     * Helper method that first makes a check if the outbound processing stack is empty,
+     *      if so, while the inbound queue is not empty it will add all inbound elements
+     *      to the outbound stack, retaining the same ordering they were received
+     */
     private void shiftStacks() {
         if (!outbox.isEmpty()) {
             while (!inbox.isEmpty()) {
@@ -47,11 +56,19 @@ public class MyQueue<T> {
         }
     }
 
+    /**
+     * Removes and returns the element at the top of the outbound stack.
+     * @return the first object in the queue
+     */
     public T dequeue() {
         shiftStacks();
         return outbox.pop();
     }
 
+    /**
+     * Check for whether the queue is empty
+     * @return boolean value
+     */
     public boolean isEmpty() {
         return inbox.isEmpty() && outbox.isEmpty();
     }
