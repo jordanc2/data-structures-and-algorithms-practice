@@ -49,7 +49,7 @@ public class MyQueue<T> {
      *      to the outbound stack, retaining the same ordering they were received
      */
     private void shiftStacks() {
-        if (!outbox.isEmpty()) {
+        if (outbox.isEmpty()) {
             while (!inbox.isEmpty()) {
                 outbox.push(inbox.pop());
             }
