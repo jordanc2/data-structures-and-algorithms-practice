@@ -24,6 +24,10 @@ public class CheckForPalindrome {
         int start = 0;
         int end = string.length() - 1;
 
+        if (string.length() == 1) {
+            return true;
+        }
+
         while (start < end) {
             if (string.charAt(start) != string.charAt(end)) {
                 return false;
