@@ -25,9 +25,10 @@ public class ValidAnagram {
         Map<Character, Integer> mapS = new HashMap<>();
         Map<Character, Integer> mapT = new HashMap<>();
 
-        for (Character c : s.toCharArray()) {
-            mapS.merge(s.charAt(c), 1, Integer::sum);
-            mapT.merge(t.charAt(c), 1, Integer::sum);
+        // Must be imperative for loop, tried for each loop and failed - 🤷
+        for (int i = 0; i < s.length(); i++) {
+            mapS.merge(s.charAt(i), 1, Integer::sum);
+            mapT.merge(t.charAt(i), 1, Integer::sum);
         }
 
         for (Character c : mapS.keySet()) {
