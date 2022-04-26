@@ -39,4 +39,31 @@ public class ValidAnagram {
 
         return true;
     }
+
+    public boolean isValidAnagram_UsingOneHashMap(String s, String t) {
+        /*
+        * Check if both strings are the same length, if not return false
+        * Create a Map, to hold the Characters from string s and their count ** Map<Character, Integer> **
+        * Iterate over String s, adding each character to the Map and increment the count
+        * Iterate over String t, adding each character to the Map and decrementing the count
+        * If any value in the keyset is NOT 0, it is not an anagram
+        */
+        if (s.length() != t.length()) {
+            return false;
+        }
+
+        Map<Character, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < s.length(); i++) {
+            map.merge(s.charAt(i), 1, Integer::sum);
+            map.merge(t.charAt(i), -1, Integer::sum);
+        }
+
+        for (Character c : map.keySet()) {
+            if (map.get(c) != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

@@ -38,7 +38,7 @@ class ValidAnagramTest {
     }
 
     @Test
-    void isValidAnagram_givenTwoValidStringsThatAreDifferentLengths_returnsFalse() {
+    void isValidAnagram_givenTwoStringsThatAreDifferentLengths_returnsFalse() {
         // GIVEN
         test_String_One = "racecar";
         test_String_Two = "racercar";
@@ -46,6 +46,48 @@ class ValidAnagramTest {
         // WHEN
         ValidAnagram validAnagram = new ValidAnagram();
         boolean result = validAnagram.isValidAnagram(test_String_One, test_String_Two);
+
+        // THEN
+        assertFalse(result);
+    }
+
+    @Test
+    void isValidAnagram_UsingOneHashMap_givenTwoValidStringsThatAreAnagrams_returnsTrue() {
+        // GIVEN
+        test_String_One = "sadder";
+        test_String_Two = "dreads";
+
+        // WHEN
+        ValidAnagram validAnagram = new ValidAnagram();
+        boolean result = validAnagram.isValidAnagram_UsingOneHashMap(test_String_One, test_String_Two);
+
+        // THEN
+        assertTrue(result);
+    }
+
+    @Test
+    void isValidAnagram_UsingOneHashMap_givenTwoValidStringsThatAreNotAnagrams_returnsFalse() {
+        // GIVEN
+        test_String_One = "nightly";
+        test_String_Two = "nightie";
+
+        // WHEN
+        ValidAnagram validAnagram = new ValidAnagram();
+        boolean result = validAnagram.isValidAnagram_UsingOneHashMap(test_String_One, test_String_Two);
+
+        // THEN
+        assertFalse(result);
+    }
+
+    @Test
+    void isValidAnagram_UsingOneHashMap_givenTwoStringsThatAreDifferentLengths_returnsFalse() {
+        // GIVEN
+        test_String_One = "cat";
+        test_String_Two = "actor";
+
+        // WHEN
+        ValidAnagram validAnagram = new ValidAnagram();
+        boolean result = validAnagram.isValidAnagram_UsingOneHashMap(test_String_One, test_String_Two);
 
         // THEN
         assertFalse(result);
