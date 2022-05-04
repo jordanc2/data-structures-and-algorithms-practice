@@ -1,4 +1,4 @@
-package blind_seventy_five.easy;
+package blind_seventy_five.easy.arraysandhashing;
 
 import java.util.HashMap;
 import java.util.Map;
